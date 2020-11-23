@@ -3,9 +3,7 @@
 1. All components ready to go (including imports)
 2. Use main.css - less imports
 3. Limit amount of components - better overview
-4. React Icons
-
-[react icons] :https://react-icons.github.io/react-icons/
+4. React Icons was used. Goto [react icons](https://react-icons.github.io/react-icons/) for more.
 
 ```javascript
 import { FaHome } from "react-icons/fa"

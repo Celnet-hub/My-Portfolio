@@ -3,8 +3,20 @@ import logo4 from "../assets/logo4.svg"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 const Navbar = ({toggleSideBar}) => {
+  const navbar = document.querySelector('.navbar')
+  window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset;
+    const navHeight = navbar.getBoundingClientRect().height;
+    if(scrollHeight > navHeight) {
+      {
+        navbar.classList.add("fixed-nav")
+      }
+    } else{
+      navbar.classList.remove('fixed-nav')
+    }
+  })
   return (
-    <nav className="navbar">
+    <nav className={`${navbar} fixed-nav`}>
       <div className="nav-center">
         <div className="nav-header">
           {/* Todo: creat my own logo use light blue 1*/}

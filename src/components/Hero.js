@@ -29,7 +29,7 @@ const Hero = () => {
         <div>
           <div className='underline'></div>
           <h1>Hi, i'm Dubem Celestine N</h1>
-          <h4>Software Developer</h4>
+          <h4>Backend Developer</h4>
           <Link to='/contact' className='btn'>
             contact me
           </Link>

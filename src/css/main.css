@@ -213,7 +213,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   z-index: 200;
@@ -288,7 +288,7 @@ Navbar
     left: 0;
     width: 100%;
     background: var(--clr-white);
-    box-shadow: var(--light-shadow);
+    /* box-shadow: var(--light-shadow); */
 }
 /*
 =============== 

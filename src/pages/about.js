@@ -11,7 +11,7 @@ const About = ({
   },
 }) => {
   //destructure the nodes array
-  const { tittle, stack, info, image } = nodes[0]
+  const { title, stack, info, image } = nodes[0]
   return (
     <Layout>
       <SEO title="About" description="about page" />
@@ -19,7 +19,7 @@ const About = ({
         <div className="section-center about-center">
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
           <article className="about-text">
-            <Title tittle={tittle} />
+            <Title title={title} />
             <p>{info}</p>
             <div className="about-stack">
               {stack.map(tech_stack => {
@@ -49,7 +49,7 @@ export const query = graphql`
           }
         }
         info
-        tittle
+        title
       }
     }
   }

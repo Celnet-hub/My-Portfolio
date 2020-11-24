@@ -11,17 +11,17 @@ const data = [
   {
     id: 1,
     icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.twitter.com",
+    url: "https://www.facebook.com/nccelestine/",
   },
   {
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    url: "https://www.linkedin.com/in/celestine12345",
   },
   {
     id: 3,
     icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
-    url: "https://www.twitter.com",
+    url: "https://github.com/Celnet-hub",
   },
   // {
   //   id: 4,
@@ -31,13 +31,13 @@ const data = [
   {
     id: 5,
     icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    url: "https://twitter.com/nwabuisicelest1",
   },
 ]
 const links = data.map(link => {
   return (
     <li key={link.id}>
-      <a href={link.url} className="social-link">
+      <a href={link.url} className="social-link" target='__blank'>
         {link.icon}
       </a>
     </li>
